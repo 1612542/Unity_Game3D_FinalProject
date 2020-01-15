@@ -15,7 +15,6 @@ public class DreamCar01Track : MonoBehaviour
     void Update()
     {
 	string markName= "Mark ("+markcount+")";
-	Debug.Log(markName);
         transform.position=GameObject.Find(markName).transform.position;
     }
 	
@@ -23,8 +22,7 @@ public class DreamCar01Track : MonoBehaviour
 		if(col.gameObject.tag == "Dreamcar01"){
 			this.GetComponent<BoxCollider>().enabled =false;
 			markcount+=1;
-			Debug.Log(markcount);
-			if(markcount==15){ markcount =0;}
+			if(markcount==36){ markcount =0;}
 			yield return new WaitForSeconds(1);
 			this.GetComponent<BoxCollider>().enabled=true;
 		}	

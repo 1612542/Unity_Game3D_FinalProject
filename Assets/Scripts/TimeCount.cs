@@ -15,19 +15,19 @@ public class TimeCount : MonoBehaviour
 	public GameObject secbox;
 	public GameObject msbox;
     void Start(){
-    	min = totaltime;
+    	min = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        ms-=Time.deltaTime*10;
+        ms+=Time.deltaTime*10;
 	msDisplay = ms.ToString("F0");
 	msbox.GetComponent<Text>().text=""+msDisplay;
 
-	if(ms<=0){
-		ms=9;
-		sec-=1;
+	if(ms>=9){
+		ms=0;
+		sec+=1;
 	}
 	
 	if(sec<=9){
@@ -36,9 +36,9 @@ public class TimeCount : MonoBehaviour
 		secbox.GetComponent<Text>().text=""+sec;
 	}
 
-	if(sec<=0){
-		sec = 59;
-		min -= 1;
+	if(sec>=59){
+		sec = 0;
+		min += 1;
 	}
 
 	if(min<=9){

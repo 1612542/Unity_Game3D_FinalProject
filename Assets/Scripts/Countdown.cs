@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Countdown : MonoBehaviour
 {
-	public GameObject countBox;
 	float ms;
 	int count;
     // Start is called before the first frame update 
