@@ -3849,6 +3849,25 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1756722345 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1756722345, guid: a34f24511fa93ad45b02db5461cf16e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 701986493341024272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1756722349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756722345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1303b7c85b7b31f44afedeacc08515d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countBox: {fileID: 0}
 --- !u!1 &1831334683
 GameObject:
   m_ObjectHideFlags: 0
@@ -4052,7 +4071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 875.03827
+      value: 899.77
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: 0fb4610dba67fc24cb2a6674fb155fc1, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4691,6 +4710,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756722346, guid: a34f24511fa93ad45b02db5461cf16e6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756722346, guid: a34f24511fa93ad45b02db5461cf16e6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756722346, guid: a34f24511fa93ad45b02db5461cf16e6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756722347, guid: a34f24511fa93ad45b02db5461cf16e6, type: 3}
+      propertyPath: m_Text
+      value: 'Ready '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1756722347, guid: a34f24511fa93ad45b02db5461cf16e6, type: 3}
+      propertyPath: m_FontData.m_FontStyle
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8708349561915858265, guid: a34f24511fa93ad45b02db5461cf16e6,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a34f24511fa93ad45b02db5461cf16e6, type: 3}
