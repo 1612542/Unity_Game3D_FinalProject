@@ -6,6 +6,7 @@ public class StartGame : MonoBehaviour
 {
 	public GameObject panel;
 	public GameObject bot;
+    public GameObject escmenu;
     // Start is called before the first frame update
     IEnumerator Start()
     {
@@ -17,6 +18,10 @@ public class StartGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if ((Input.GetKeyDown(KeyCode.Escape) ))
+        {
+            escmenu.SetActive(true);     
+        }
+       
     }
 }
